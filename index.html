@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+		<script type="text/javascript" src="main.js"></script>
+
+	
+	</head>
+
+	<body> 
+
+		
+		
+		  <span id ="status" > </span>
+<h1> Strong Tides </h1>
+ <button id="starts" onclick="document.getElementById('instructions').style.display='block'">Instructions</button><br />
+
+<br /> Gold: <span id="people">0</span>  <br />
+	<button id="cat" onclick="peopleClick(.1)"> </button>   
+   <br />Shady Loans <span id="loans"></span><br />
+
+        <button id="moo" onclick="buytents()"> </button> <br />
+		 Markets: <span id="tents">0</span> 
+		
+     <br />  Market Cost: <span id="tentcost">20</span> <br />
+		
+		<button id="dog" onclick="buyports()"></button>
+		<br />
+		Trade Port: <span id="ports">0</span>
+		<br />
+		Trade Port Cost: <span id="portcost">200</span>
+		<br />
+		<button id="meow" onclick="buybanks()"></button>
+		<br />
+		Deposit Bank: <span id="banks">0</span>
+		<br />
+		Deposit Bank Cost: <span id="bankcost">5000</span>
+          
+     <audio id="grand" autoplay loop> <source src="./Images/grandre.mp3" type="audio/MP3"> </audio>
+
+
+	</body>
+	
+
+
+ <div id = "pop">
+   <div id = "soda">* * * * * * * * * Bank of Saint George * * * * * * * * * </div>
+  <button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+ </div>
+ 
+<div id = "instructions">
+   
+   <p id = "kittens"> <br />
+Welcome to Strong Tides <br /><br />
+Your goal is to amass enough gold florins and ducats to be able to build the Bank of Saint George, the first ever deposit bank. 
+<br /> <br /><br /> <br /><br />
+Warning: Saving has not been implemented in this version of the game.
+
+
+
+   </p>
+  <button id="close2" onclick="document.getElementById('instructions').style.display='none'">X</button>
+ </div>
+ 
+
+ 
+ 
+</html>
