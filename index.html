@@ -2,40 +2,43 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="mystyle.css">
 		<script type="text/javascript" src="main.js"></script>
-
-	
+		
+			<audio id="grand" autoplay loop> <source src="./Images/grandre.mp3" type="audio/MP3"> </audio>
 	</head>
 
 	<body> 
 
 		
-		
+<!-- Title -->
 		  <span id ="status" > </span>
 <h1> Strong Tides </h1>
- <button id="starts" onclick="document.getElementById('instructions').style.display='block'">Instructions</button><br />
 
-<br /> Gold: <span id="people">0</span>  <br />
-	<button id="cat" onclick="peopleClick(.1)"> </button>   
-   <br />Shady Loans <span id="loans"></span><br />
+<!-- Gold -->
+	<div id="golddiv"> 
+	<div id="peoplediv">
+		 Gold: <span id="people">0</span> </div>
+	</div>
+
+<!-- Structure Buttons and Div -->
+<div id="structurediv">
+ <button id="closestructure" onclick="document.getElementById('structurediv').style.display='none'">X</button>  
+		<br /><button id="cat" onclick="peopleClick(.1)"> </button>   
+		<br />Shady Loans <span id="loans"></span> <br />
 
         <button id="moo" onclick="buytents()"> </button> <br />
 		 Markets: <span id="tents">0</span> 
+		<br />  Market Cost: <span id="tentcost">20</span> <br />
 		
-     <br />  Market Cost: <span id="tentcost">20</span> <br />
+		<button id="dog" onclick="buyports()"></button> <br />
+		Trade Port: <span id="ports">0</span><br />
+		Trade Port Cost: <span id="portcost">200</span> <br />
 		
-		<button id="dog" onclick="buyports()"></button>
-		<br />
-		Trade Port: <span id="ports">0</span>
-		<br />
-		Trade Port Cost: <span id="portcost">200</span>
-		<br />
-		<button id="meow" onclick="buybanks()"></button>
-		<br />
-		Deposit Bank: <span id="banks">0</span>
-		<br />
+		<button id="meow" onclick="buybanks()"></button> <br />
+		Deposit Bank: <span id="banks">0</span> <br />
 		Deposit Bank Cost: <span id="bankcost">5000</span>
-          
-     <audio id="grand" autoplay loop> <source src="./Images/grandre.mp3" type="audio/MP3"> </audio>
+		
+       
+ </div>   
 
 
 	</body>
@@ -61,7 +64,13 @@ Warning: Saving has not been implemented in this version of the game.
   <button id="close2" onclick="document.getElementById('instructions').style.display='none'">X</button>
  </div>
  
+<!-- Bottom Toolbar Button -->
+ <div id = "toolbarbottom">
+ <div id = "decoration">
+ <!-- Help Button -->
+  <button id="starts" onclick="document.getElementById('instructions').style.display='block'"></button><br />
 
- 
- 
+ <!-- Structure Button -->
+ <button id = "structures" onclick="document.getElementById('structurediv').style.display='block'"></button>
+    
 </html>

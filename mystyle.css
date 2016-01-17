@@ -1,62 +1,77 @@
 	
-	    body {font-size: 20px;
-		      font-family: comic sans MS;
-			  
+	    body {font-size: 15px;
+		      font-family: Trajan; "comic sans MS";
 		background-image: url(./Images/venice2.png);
 		background-repeat:no-repeat;
 		 background-attachment: fixed;
  background-size: 1024px 600px;
 		}
+		
+	/* Gold Div */
+		#golddiv{
+				background-image: url(./Images/goldbar.png);
+				background-size: 300px 40px;
+				background-repeat:no-repeat;
+				
+			    font-size: 20px;
+				height: 40px;
+				width: 300px;
+				border-color: gray;
+	            position: fixed;
+				top: 0%;
+		        right: 0%;
+				text-align: center;
+				color: white;
+				font-family: Trajan; "comic sans MS";
+		
+		}
+
+		
+		
+	/* Structure Buttons */
 		#cat {background-image: url(./Images/redneck.png);
-		      
-				height: 100px;
-				width: 100px;
-			    background-repeat: repeat-x;
-				background-repeat: repeat-y;
-				font-size: 20px;
+				height: 75px;
+				width: 75px;
+			    background-size: cover;
+				font-size: 15px;
 				
 				}
 		
 		#dog {background-image: url(./Images/port.png);
-		     
-height: 100px;
-				width: 100px;
-			    background-repeat: repeat-x;
-				background-repeat: repeat-y;
-				font-size: 20px;
+			    height: 75px;
+				width: 75px;
+				background-size: cover;
+				font-size: 15px;
 				
 				}
 	#moo {background-image: url(./Images/market.png);
-		     
-height: 100px;
-				width: 100px;
-			    background-repeat: repeat-x;
-				background-repeat: repeat-y;
-				font-size: 20px;
+				height: 75px;
+				width: 75px;
+			    background-size: cover;
+				font-size: 15px;
 				
 				}
-					#meow {background-image: url(./Images/market.png);
-		     
-height: 100px;
-				width: 100px;
-			    background-repeat: repeat-x;
-				background-repeat: repeat-y;
-				font-size: 20px;
+	#meow {background-image: url(./Images/market.png);
+				height: 75px;
+				width: 75px;
+				background-size: cover;
+				font-size: 15px;
 				
 				}
-				
+	
+	/* Wonder Pop-up */
 	#pop {background-image: url(./Images/bank.png);
 
 	background-repeat: no-repeat-x;
 	background-repeat: no-repeat-y;
 	background-color: black;
 	
-	   height: 400px;
-   width: 500px;
-   position: fixed;
-   bottom: 10%;
-   center: 80%;
-   right: 30%;
+    height: 400px;
+    width: 500px;
+    position: fixed;
+    bottom: 10%;
+    center: 80%;
+    right: 30%;
   
 border-style: solid;
 border-width: 35px 35px 35px 35px;
@@ -67,18 +82,14 @@ border-image: url(./Images/olive.png) 35 35 35 35 fill stretch;
 
    display: none;
 	
-	
-	
 	}
+	/* instructions pop-up */
 	#instructions {background-color: white;
 	    background: Beige; /* For browsers that do not support gradients */    
     background: -webkit-linear-gradient(left top, Beige, BurlyWood); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, Beige, BurlyWood); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, Beige, BurlyWood); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, Beige, BurlyWood); /* Standard syntax (must be last) */
-
-	
-	
 	height: 375px;
 	width: 500px; 
    position: fixed;
@@ -115,5 +126,96 @@ opacity: 0.5;
 	width:  500px;
 	background-color: white;
  position: fixed;
- bottom: 17% 
+ bottom: 17%; 
 }
+/* ToolBox and Buttons */
+	#toolbarbottom {
+		width: 1024px;
+		height: 50px;
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		  background-image: url('./Images/toolbar.png');
+   background-repeat:no-repeat;
+   background-size: contain;
+   background-repeat: repeat-x;
+   background-position: center;
+	}
+	
+	#decoration{
+		width: 80px;
+		height: 85px;
+		position: fixed;
+		bottom: 0px;
+		right: 47%;
+		background-image: url('./Images/fluer.png');
+		background-size: contain;
+		background-position:center;
+		background-repeat:no-repeat;
+	}
+	/*ToolBox Buttons */
+	#structures{
+			width: 45px;
+		height: 25px;
+		position: fixed;
+		bottom: 13px;
+		right: 90%;
+	    background-image: url('./Images/structure.png');
+			background-size: cover;
+		background-position:center;
+		background-repeat:no-repeat;
+		border: none;
+	}
+	#starts{
+			width: 45px;
+		height: 25px;
+		position: fixed;
+		bottom: 13px;
+		right: 95%;
+	    background-image: url('./Images/help.png');
+			background-size: cover;
+		background-position:center;
+		background-repeat:no-repeat;
+		border: none;
+	}
+	
+/* Structure Div Holder */
+	
+	#structurediv {background-color: white;
+	    background: #373936;
+        opacity: .95;
+		height: 375px;
+		width: 200px; 
+		position: fixed;
+		bottom: 10%;
+		
+		right: 78%;
+		border-style: solid;
+		border-width: 8px 8px 8px 8px;
+		-moz-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
+		-webkit-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
+		-o-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
+		border-image: url(./Images/olive.png) 35 35 35 35 fill stretch;
+		overflow: scroll;
+		overflow-x:hidden;
+		
+		color: white;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+	#closestructure{
+	
+	float: right;
+	opacity: 0.5;
+	background-color: darkgray;
+	}
