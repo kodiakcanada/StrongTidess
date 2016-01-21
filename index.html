@@ -11,7 +11,7 @@
 		
 <!-- Title -->
 		  <span id ="status" > </span>
-<h1> Strong Tides </h1>
+
 
 <!-- Gold -->
 	<div id="golddiv"> 
@@ -22,7 +22,7 @@
 <!-- Structure Buttons and Div -->
 <div id="structurediv">
  <button id="closestructure" onclick="document.getElementById('structurediv').style.display='none'">X</button>  
-		<br /><button id="cat" onclick="peopleClick(.1)"> </button>   
+		<br /><button id="cat" onclick="peopleClick(.5)"> </button>   
 		<br />Shady Loans <span id="loans"></span> <br />
 
         <button id="moo" onclick="buytents()"> </button> <br />
@@ -39,38 +39,77 @@
 		
        
  </div>   
+ 
+ <!-- Upgrade Buttons and Div -->
+<div id="upgradediv">
+<button id="closeupgrade" onclick="document.getElementById('upgradediv').style.display='none'">X</button> <br /> <br /> 
+		
+		<button id="upgrademarket" onclick="marketupgrade()"> </button>  
+		<p id="marketupgradepara"> x2 Market Stands ___ Cost: 200 </p>
+     	
+ </div>  
 
-
-	</body>
+</body>
 	
 
 
  <div id = "pop">
-   <div id = "soda">* * * * * * * * * Bank of Saint George * * * * * * * * * </div>
-  <button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
+		<div id = "soda">* * * * * * * * * Bank of Saint George * * * * * * * * * </div>
+		<button id="close" onclick="document.getElementById('pop').style.display='none'">X</button>
  </div>
- 
+  <!-- Instructions Div -->
 <div id = "instructions">
-   
+<button id="close2" onclick="document.getElementById('instructions').style.display='none'">X</button>
+   <div id = "logo"></div><br /><br />
    <p id = "kittens"> <br />
-Welcome to Strong Tides <br /><br />
+Welcome <br /><br />
 Your goal is to amass enough gold florins and ducats to be able to build the Bank of Saint George, the first ever deposit bank. 
-<br /> <br /><br /> <br /><br />
+<br /> <br /><br /> <br />
 Warning: Saving has not been implemented in this version of the game.
-
-
-
    </p>
-  <button id="close2" onclick="document.getElementById('instructions').style.display='none'">X</button>
+  
  </div>
  
-<!-- Bottom Toolbar Button -->
- <div id = "toolbarbottom">
- <div id = "decoration">
- <!-- Help Button -->
+ <!-- Events Popups -->
+	<!-- Merchant-->
+<div id="eventsdiv">
+	<div id="eventspictureholder">
+		<div id="eventspicture"></div>
+		<p id="eventspara"> Times are changing. Many nations across Europe have taking notice of the vast riches 
+		in Asia. A few adventurous individuals from the rural parts of your city state has managed to secure some 
+		wealth by trading. However; these traders seek your help to expand their market base. <p>
+	</div>	
+	<button id="yesevents" onclick="yeschoice()"> Yes? 2000G for +1P (40%)</button> 
+	<button id="noevents" onclick="nochoice()">No? -1P (50%)</button> 
+</div>
+
+	<!-- Sultan-->
+<div id="eventsdiv2">
+	<div id="eventspictureholder2">
+		<div id="eventspicture2"></div>
+		<p id="eventspara2"> Tides are turning, the Great Sultan John II of the Ottoman Empire has caught
+		attention of the growing demand of Asian silk, spices and goods. As a result, John the II has decided to implement
+		more tarrifs on merchants. Because of your advanced ship building capabilities the Ottomans may: <p>
+	</div>	
+	<button id="yesevents2" onclick="yeschoice2()"> Offer a Trade Agreement +4P (30%)</button> 
+	
+</div>
+
+ <!-- Power Toolbar -->
+	<div id = "powertoolbar">
+ <div id="powertextdiv">
+		 <span id="power">1</span> P</div>
+		</div>
+ <!-- Bottom Toolbar Button -->
+	<div id = "toolbarbottom">
+	<div id = "decoration">
+		<!-- Help Button -->
   <button id="starts" onclick="document.getElementById('instructions').style.display='block'"></button><br />
 
- <!-- Structure Button -->
+		<!-- Structure Button -->
  <button id = "structures" onclick="document.getElementById('structurediv').style.display='block'"></button>
-    
+
+		<!-- Upgrade Button -->
+  <button id = "upgrades" onclick="document.getElementById('upgradediv').style.display='block'"></button>
+  
 </html>

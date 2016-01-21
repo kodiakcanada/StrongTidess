@@ -2,20 +2,24 @@
 	    body {font-size: 15px;
 		      font-family: Trajan; "comic sans MS";
 		background-image: url(./Images/venice2.png);
+		  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 		background-repeat:no-repeat;
 		 background-attachment: fixed;
- background-size: 1024px 600px;
+
 		}
 		
 	/* Gold Div */
 		#golddiv{
 				background-image: url(./Images/goldbar.png);
-				background-size: 300px 40px;
+				background-size: 100% 100%;
 				background-repeat:no-repeat;
 				
 			    font-size: 20px;
-				height: 40px;
-				width: 300px;
+				height: 10%;
+				width: 30%;
 				border-color: gray;
 	            position: fixed;
 				top: 0%;
@@ -58,6 +62,15 @@
 				font-size: 15px;
 				
 				}
+/* Upgrades Buttons */
+	#upgrademarket {
+				height: 12px;
+				width: 25px
+		
+	}
+		
+		
+		
 	
 	/* Wonder Pop-up */
 	#pop {background-image: url(./Images/bank.png);
@@ -103,7 +116,19 @@ border-width: 35px 35px 35px 35px;
 -o-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
 border-image: url(./Images/olive.png) 35 35 35 35 fill stretch;
 }
-
+	#logo{background-image: url(./Images/strongtides.png);
+					width: 80%;
+		height: 12%;
+        position: relative;
+		top: 10%;
+		left: 11%;
+	  
+			background-size: cover;
+		background-position:center;
+		background-repeat:no-repeat;
+		border: none;
+	}
+    
 #close{
 right: 5;
 bottom: 5;
@@ -130,8 +155,8 @@ opacity: 0.5;
 }
 /* ToolBox and Buttons */
 	#toolbarbottom {
-		width: 1024px;
-		height: 50px;
+		width: 100%;
+		height: 8%;
 		position: fixed;
 		bottom: 0px;
 		right: 0px;
@@ -143,8 +168,8 @@ opacity: 0.5;
 	}
 	
 	#decoration{
-		width: 80px;
-		height: 85px;
+		width: 12%;
+		height: 15%;
 		position: fixed;
 		bottom: 0px;
 		right: 47%;
@@ -155,8 +180,8 @@ opacity: 0.5;
 	}
 	/*ToolBox Buttons */
 	#structures{
-			width: 45px;
-		height: 25px;
+			width: 4.5%;
+		height: 4.5%;
 		position: fixed;
 		bottom: 13px;
 		right: 90%;
@@ -166,9 +191,23 @@ opacity: 0.5;
 		background-repeat:no-repeat;
 		border: none;
 	}
+	
+	#upgrades{
+			width: 4.5%;
+		height: 4.5%;
+		position: fixed;
+		bottom: 13px;
+		right: 85%;
+	    background-image: url('./Images/upgrade.png');
+			background-size: cover;
+		background-position:center;
+		background-repeat:no-repeat;
+		border: none;
+	}
+	
 	#starts{
-			width: 45px;
-		height: 25px;
+			width: 4.5%;
+		height: 4.5%;
 		position: fixed;
 		bottom: 13px;
 		right: 95%;
@@ -185,11 +224,11 @@ opacity: 0.5;
 	    background: #373936;
         opacity: .95;
 		height: 375px;
-		width: 200px; 
+		max-width: 200px; 
 		position: fixed;
 		bottom: 10%;
 		
-		right: 78%;
+		left: 0%;
 		border-style: solid;
 		border-width: 8px 8px 8px 8px;
 		-moz-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
@@ -201,7 +240,175 @@ opacity: 0.5;
 		
 		color: white;
 }
+	#closestructure{
+	float: right;
+	opacity: 0.5;
+	background-color: darkgray;
+	}
+	
+/* Upgrades Div Holder */
+	#upgradediv {background-color: white;
+	    background: #373936;
+        opacity: .95;
+		height: 375px;
+		max-width: 2000px; 
+		position: fixed;
+		bottom: 10%;
+		padding: 10px;
+		left: 30%;
+		border-style: solid;
+		border-width: 8px 8px 8px 8px;
+		-moz-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
+		-webkit-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
+		-o-border-image: url(./Images/olive.png) 35 35 35 35 stretch;
+		border-image: url(./Images/olive.png) 35 35 35 35 fill stretch;
+		overflow: scroll;
+		overflow-x:hidden;
+		
+		color: white;
+		display: none;
+}
+	#closeupgrade{
+	float: right;
+	opacity: 0.5;
+	background-color: darkgray;
+	}
 
+/* Events Div Holder */
+	#eventsdiv{
+		
+		height: 375px;
+		max-width: 40%; 
+		position: fixed;
+		bottom: 10%;
+		padding: 10px;
+		left: 30%;
+
+		border-style: solid;
+		border-width: 30px 30px 30px 30px;
+		-moz-border-image: url(./Images/olive2.png) 25 25 25 25 repeat;
+		-webkit-border-image: url(./Images/olive2.png)25 25 25 25 repeat;
+		-o-border-image: url(./Images/olive2.png) 25 25 25 25 repeat;
+		border-image: url(./Images/olive2.png) 25 25 25 25 fill repeat;
+		
+		background: peru; /* For browsers that do not support gradients */    
+		background: -webkit-linear-gradient(left top, peru, Sienna); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, peru, Sienna); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right, peru, Sienna); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, peru, Sienna); /* Standard syntax (must be last) */
+		display: none;
+	}
+	#eventspictureholder{
+		float: center;
+		min-width: 30%;
+		min-height:90%;
+	
+	}
+	#eventspicture{
+		float: top;
+		min-width: 30%;
+		min-height:50%;
+		background-image: url(./Images/merchantevent.png);
+		background-size: 100% 100%;
+		background-repeat:no-repeat;
+	}
+	#eventspara{
+		color:white;
+		position: relative;
+	    bottom: 30%;
+		left: 0%;
+        text-indent: 30px;
+	}
+
+		#noevents{
+	float: left;
+	width: 45%;
+	height: 8%;
+	background-color: Sienna;
+	color: white;
+	}
+		#yesevents{
+	float: right;
+	width: 45%;
+	height: 8%;
+	background-color: Sienna;
+	color: white;
+	}
+	
+/* Events Sultan*/
+	#eventsdiv2{
+		
+		height: 375px;
+		max-width: 40%; 
+		position: fixed;
+		bottom: 10%;
+		padding: 10px;
+		left: 30%;
+
+		border-style: solid;
+		border-width: 30px 30px 30px 30px;
+		-moz-border-image: url(./Images/olive2.png) 25 25 25 25 repeat;
+		-webkit-border-image: url(./Images/olive2.png)25 25 25 25 repeat;
+		-o-border-image: url(./Images/olive2.png) 25 25 25 25 repeat;
+		border-image: url(./Images/olive2.png) 25 25 25 25 fill repeat;
+		
+		background: peru; /* For browsers that do not support gradients */    
+		background: -webkit-linear-gradient(left top, peru, Sienna); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(bottom right, peru, Sienna); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(bottom right, peru, Sienna); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to bottom right, peru, Sienna); /* Standard syntax (must be last) */
+		display: none;
+	}
+	#eventspictureholder2{
+		float: center;
+		min-width: 30%;
+		min-height:90%;
+	
+	}
+	#eventspicture2{
+		float: top;
+		min-width: 30%;
+		min-height:50%;
+		background-image: url(./Images/sultanevent.png);
+		background-size: 100% 100%;
+		background-repeat:no-repeat;
+	}
+	#eventspara2{
+		color:white;
+		position: relative;
+	    bottom: 30%;
+		left: 0%;
+        text-indent: 30px;
+	}
+
+		#yesevents2{
+	
+	width: 100%;
+	height: 8%;
+	background-color: Sienna;
+	color: white;
+	}
+	
+/* Power Toolbar */
+		#powertoolbar{
+	position: fixed;
+	top: 12%;
+	right: 1%;
+	width: 100px;
+	height: 100px;
+	background-image: url(./Images/power.png);
+				background-size: 100% 100%;
+				background-repeat:no-repeat;
+		}
+			#powertextdiv{
+    padding-top: 40%;
+	padding-bottom: 40%;
+    text-align: center;
+	color: white;
+	font-size: 22;
+			}
+	
+	
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -213,9 +420,3 @@ opacity: 0.5;
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
-	#closestructure{
-	
-	float: right;
-	opacity: 0.5;
-	background-color: darkgray;
-	}
